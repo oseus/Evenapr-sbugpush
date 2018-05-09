@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<br>
+<br>
+<br>
+<p class="text-center">
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+<p class="text-center">
+  <strong>Place:</strong>
+  <%= @event.place %>
+</p>
+
+<p class="text-center">
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+
+
+<p class="text-center">
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Destroy', destroy_events_path, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', events_path %> |
+<%= link_to 'All Events',  all_path %>
+</p>
